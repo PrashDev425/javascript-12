@@ -155,10 +155,21 @@ let id = Symbol("unique");         // Symbol
 let user = { name: "Prashant", age: 20 };   // Object
 let numbers = [1, 2, 3];           // Array
 
-function sayHi() 
-{                 // Function
+function sayHi() // Function
+{                 
   console.log("Hi!");
 }
+
+console.log(age);
+console.log(name);
+console.log(isStudent);
+console.log(x);
+console.log(empty);
+console.log(big);
+console.log(id);
+console.table(user);
+console.table(numbers);
+console.log(sayHi);
 
 console.log(typeof(age));
 console.log(typeof(name));
