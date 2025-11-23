@@ -145,14 +145,18 @@ function greet()
 
 ``` js
 let age = 20;                      // Number
-let name = "Prashant";             // String
+let name = "Ram";             // String
 let isStudent = true;              // Boolean
 let x;                             // Undefined
 let empty = null;                  // Null
 let big = 123456789123456789n;     // BigInt
 let id = Symbol("unique");         // Symbol
 
-let user = { name: "Prashant", age: 20 };   // Object
+let user = {
+  name: "Ram",
+  age: 20 
+};   // Object
+
 let numbers = [1, 2, 3];           // Array
 
 function sayHi() // Function
@@ -167,7 +171,7 @@ console.log(x);
 console.log(empty);
 console.log(big);
 console.log(id);
-console.table(user);
+console.table(user); 
 console.table(numbers);
 console.log(sayHi);
 
@@ -181,4 +185,15 @@ console.log(typeof(id));
 console.log(typeof(user));
 console.log(typeof(numbers));
 console.log(typeof(sayHi));
+```
+
+## **Printing output in js**
+
+```js
+let name = "Ram"
+let age = 25
+console.log("My name is " + name + " and my age is " + age);
+console.log("My name is", name, "and my age is", age);
+console.log(`My name is ${name} and my age is ${age}`)
+console.log("My name is %s and my age is %d", name, age);
 ```
