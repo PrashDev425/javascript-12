@@ -27,7 +27,7 @@ JavaScript provides **three** keywords for variable declaration:
 -   Cannot be updated or re-declared
 -   Must be initialized during declaration
 
-### **Syntax**
+### **Example**
 
 ``` js
 let age = 20;
@@ -62,7 +62,8 @@ let price = 99.99;
 Represents text inside quotes.
 
 ``` js
-let name = "Prashant";
+let name = "Ram";
+let char = 'A'
 ```
 
 ### **c) Boolean**
@@ -115,7 +116,7 @@ Stores key--value pairs.
 
 ``` js
 let user = {
-  name: "Prashant",
+  name: "Ram",
   age: 20
 };
 ```
@@ -126,6 +127,7 @@ Stores multiple values.
 
 ``` js
 let colors = ["red", "blue", "green"];
+let marks = [45, 34, 56, 70, 85];
 ```
 
 ### **c) Function**
@@ -145,7 +147,8 @@ function greet()
 
 ``` js
 let age = 20;                      // Number
-let name = "Ram";             // String
+let name = "Ram";                  // String
+let grade = 'A';                   // Single Character
 let isStudent = true;              // Boolean
 let x;                             // Undefined
 let empty = null;                  // Null
@@ -166,6 +169,7 @@ function sayHi() // Function
 
 console.log(age);
 console.log(name);
+console.log(grade);
 console.log(isStudent);
 console.log(x);
 console.log(empty);
@@ -177,6 +181,7 @@ console.log(sayHi);
 
 console.log(typeof(age));
 console.log(typeof(name));
+console.log(typeof(grade));
 console.log(typeof(isStudent));
 console.log(typeof(x));
 console.log(typeof(empty));
