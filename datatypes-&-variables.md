@@ -63,7 +63,7 @@ Represents text inside quotes.
 
 ``` js
 let name = "Ram";
-let char = 'A'
+let char = 'A';
 ```
 
 ### **c) Boolean**
@@ -195,8 +195,8 @@ console.log(typeof(sayHi));
 ## **Printing output in js**
 
 ```js
-let name = "Ram"
-let age = 25
+let name = "Ram";
+let age = 25;
 console.log("My name is " + name + " and my age is " + age);
 console.log("My name is", name, "and my age is", age);
 console.log(`My name is ${name} and my age is ${age}`)
