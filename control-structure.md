@@ -36,17 +36,6 @@ if (condition)
 } 
 ```
 
-Example:
-
-```js
-let age = 20;
-
-if (age >= 18) 
-{
-    console.log("You are an adult. You can vote.");
-}
-
-```
 
 #### ``if-else``
 
@@ -61,19 +50,6 @@ if (condition)
 else
 {
   // Statements;
-}
-```
-
-Example:
-```js
-let num = 45;
-if (num % 2 == 0) 
-{
-    console.log(num + " is Even Number");
-} 
-else 
-{
-    console.log(num + " is Odd Number");
 }
 ```
 > The block of code following the else statement is executed as the condition present in the if statement is false.
@@ -98,25 +74,6 @@ else if (condition)
 else
 {
   // Statements;
-}
-```
-
-Example:
-
-```js
-let a = 10; 
-let b = 45;
-if (a > b) 
-{
-    console.log(a + " is Greater");
-} 
-else if (b > a) 
-{
-    console.log(b + " is Greater");
-} 
-else 
-{
-    console.log("Both are Equal");
 }
 ```
 
@@ -147,51 +104,6 @@ switch (Expression)
 }
 ```
 
-Example:
-
-```js
-let marks = 78;   // Change this to test
-
-switch (true)
-{
-    case (marks >= 90 && marks <= 100):
-    {
-        console.log("Grade: A");
-        break;
-    }
-    case (marks >= 80 && marks < 90):
-    {
-        console.log("Grade: B");
-        break;
-    }
-    case (marks >= 70 && marks < 80):
-    {
-        console.log("Grade: C");
-        break;
-    }
-    case (marks >= 60 && marks < 70):
-    {
-        console.log("Grade: D");
-        break;
-    }
-    case (marks >= 50 && marks < 60):
-    {
-        console.log("Grade: E");
-        break;
-    }
-    case (marks >= 0 && marks < 50):
-    {
-        console.log("NG");
-        break;
-    }
-    default:
-    {
-        console.warn("Invalid Marks: Marks Range [0 - 100]");
-    }
-}
-
-```
-
 ### Looping (Iteration Statements)
 
 **Looping** allows you to repeat a block of code multiple times. Loops are useful when you need to perform the same task again and again.
@@ -209,23 +121,6 @@ for (initialization; condition; increment/decrement)
 }
 ```
 
-Example:
-
-```js
-for (let x = 0; x <= 20; x++) 
-{
-    console.log("The number is: " + x);
-}
-for (let x = 0; x <= 20; x += 2) 
-{
-    console.log("Even: " + x);
-}
-for (let x = 1; x <= 20; x += 2) 
-{
-    console.log("Odd: " + x);
-}
-```
-
 #### **for...in** Loop
 
 The ``for...in`` loop is used to iterate over the ``keys (property names)`` of an ``object`` or the ``indexes`` of an ``array``.
@@ -238,26 +133,6 @@ for (let key in object)
 }
 ```
 
-Example:
-```js
-const person = { 
-  name: "John",
-  age: 25, 
-  country: "Nepal" 
-};
-
-for (let key in person) 
-{
-    console.log(key + ": " + person[key]);
-}
-
-const fruits = ["Apple", "Banana", "Mango"];
-
-for (let index in fruits) 
-{
-    console.log(index, fruits[index]);
-}
-```
 
 ### **for...of** Loop
 
@@ -268,22 +143,6 @@ Syntax:
 for (let value of iterable) 
 {
   // Statements
-}
-```
-
-Example:
-
-```js
-const colors = ["Red", "Green", "Blue"];
-
-for (let color of colors) 
-{
-    console.log(color);
-}
-
-for (let char of "JavaScript") 
-{
-    console.log(char);
 }
 ```
 
@@ -300,37 +159,6 @@ while (condition)
 }
 ```
 
-Example:
-
-```js
-let maxRetries = 5;
-let attempt = 0;
-let connected = false;
-
-while (attempt < maxRetries && connected == false) 
-{
-    attempt++;
-    console.log(`Attempt ${attempt}: Trying to connect...`);
-    // Simulate random connection success (20% chance)
-    let success = Math.random() < 0.2;
-    if (success == true) 
-    {
-      console.log("Connected successfully!");
-      connected = true;
-    } 
-    else 
-    {
-      console.log("Connection failed. Retrying...\n");
-    }
-    // -----------------------------------------------
-}
-
-if (!connected) {
-    console.log("Max retries reached. Could not connect.");
-}
-
-```
-
 #### ``do`` ``while`` loop
 
 The ``do...while`` loop - Loops through a block of code once, and then repeats the loop as long as the specified condition is true.The ``do...while`` loop will always execute the block of code once, it will then check the condition, and repeat the loop while the specified condition is true.
@@ -342,17 +170,6 @@ do
 {
   // Statements
 } while (condition); 
-```
-
-Example:
-
-```js
-let password;
-do 
-{
-    password = prompt("Enter password:");
-} while (password !== "1234");
-console.log("Access Granted!");
 ```
 
 
@@ -371,23 +188,6 @@ Syntax:
 break; 
 ```
 
-Example:
-
-```js
-const correctPin = "5832"; // the pin we want to find
-
-for (let i = 0; i <= 9999; i++) 
-{
-    // convert number to a 4-digit string
-    const attempt = i.toString().padStart(4, "0");
-    console.log(`Trying: ${attempt}`);
-    if (attempt === correctPin) 
-    {
-        console.log(`PIN found: ${attempt}`);
-        break;
-    }
-}
-```
 
 #### **continue** Statement
 
@@ -397,19 +197,4 @@ Syntax:
 
 ```js
 continue;
-```
-
-Example:
-
-```js
-const fields = ["John", "", "Dog", "", "Nepal", "", "", "Apple"];
-
-for (let i = 0; i < fields.length; i++) 
-{
-    if (fields[i] === "") 
-    {
-        continue; // skip empty fields
-    }
-    console.log(`Processing index ${i}:`, fields[i]);
-}
 ```
