@@ -98,7 +98,7 @@ console.table(arr);
 
 ## Tasks
 
-### Simple Search (Linear Search)
+### 1. Simple Search (Linear Search)
 
 In computer science, linear search or sequential search is a method for finding an element within a list. It sequentially checks each element of the list until a match is found or the whole list has been searched.
 
@@ -134,7 +134,7 @@ else
 ```
 
 
-### Sum of Array
+### 2. Sum of Array
 
 ```js
 function sumOfArray(arr) 
@@ -152,7 +152,7 @@ let result = sumOfArray(numbers);
 document.write("Sum of array elements: "+ result);
 ```
 
-### Min, Max, Avg & Reverse of Array
+### 3. Min, Max, Avg & Reverse of Array
 
 ```js
 min(arr)
