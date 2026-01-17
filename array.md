@@ -65,7 +65,7 @@ for (let i = 0; i < size; i++) {
 }
 
 for (let i = 0; i < number.length; i++) {
-    console.log("number[" + i + "] = " + number[i] + "<br>");
+    document.write("number[" + i + "] = " + number[i] + "<br>");
 }
 ```
 
@@ -160,4 +160,63 @@ max(arr)
 avg(arr)
 reverse(arr) // using inverse loop and push()
 ```
-> Do Yourself
+
+```js
+function min(arr) 
+{
+  let min = arr[0];
+
+  for (let i = 1; i < arr.length; i++) 
+  {
+    if (arr[i] < min) 
+    {
+      min = arr[i];
+    }
+  }
+  return min;
+}
+
+function max(arr) 
+{
+  let max = arr[0];
+
+  for (let i = 1; i < arr.length; i++) 
+  {
+    if (arr[i] > max) 
+    {
+      max = arr[i];
+    }
+  }
+  return max;
+}
+
+function avg(arr)
+{
+  let sum = 0;
+
+  for (let i = 0; i < arr.length; i++)
+  {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+}
+
+function reverse(arr)
+{
+  let rev = [];
+
+  for (let i = arr.length - 1; i >= 0; i--)
+  {
+    rev.push(arr[i]);
+  }
+  return rev;
+}
+
+let numbers = [25, 10, 45, 5, 30];
+
+document.write("Array: " + numbers + "<br>");
+document.write("Minimum: " + min(numbers) + "<br>");
+document.write("Maximum: " + max(numbers) + "<br>");
+document.write("Average: " + avg(numbers) + "<br>");
+document.write("Reverse: " + reverse(numbers));
+```
