@@ -9,9 +9,9 @@
 - [**Task**](tasks/task-1.md)
 
 ## Advance Concepts
-- **Functions in Javascript**
-- **Array in Javascript**
-- **Objects and Object Based Programming in Javascript**
+- **Functions**
+- **Array**
+- **Objects and Object Based Programming**
 
 ## Popups and Console logging
 
