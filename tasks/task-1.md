@@ -29,7 +29,7 @@ Write a JavaScript program that checks numbers from **1 to 100**:
 - Stop the loop using `break` after **25 outputs** have been printed.
 - At the end, print the total number of outputs generated.
 
-# Question 4
+## Question 4
 
 Write a JavaScript program that loops through numbers from **1 to 500**:
 
